@@ -1,0 +1,173 @@
+@custom-variant dark (&:is(.dark *));
+
+/* Text Selection Highlight */
+::selection {
+  background-color: #007CF0;
+  color: #FFFFFF;
+}
+
+::-moz-selection {
+  background-color: #007CF0;
+  color: #FFFFFF;
+}
+
+:root {
+  --font-size: 16px;
+  
+  /* Dark Futuristic AI Palette */
+  --background: #010102; /* Space Black */
+  --foreground: #EAF6FF; /* Cloud White */
+  --card: #0C0F19; /* Code Slate */
+  --card-foreground: #EAF6FF; /* Cloud White */
+  --popover: #0C0F19; /* Code Slate */
+  --popover-foreground: #EAF6FF; /* Cloud White */
+  --primary: #007CF0; /* Aurora Blue */
+  --primary-foreground: #EAF6FF; /* Cloud White */
+  --secondary: #090979; /* Deep Indigo */
+  --secondary-foreground: #EAF6FF; /* Cloud White */
+  --muted: #0A0D16; /* Darker Code Slate */
+  --muted-foreground: #8B9BB8; /* Muted Cloud White */
+  --accent: #FF1B9B; /* Electric Pink */
+  --accent-foreground: #EAF6FF; /* Cloud White */
+  --destructive: #FFB200; /* Quantum Amber */
+  --destructive-foreground: #010102; /* Space Black */
+  --border: rgba(75, 201, 255, 0.3); /* Icy Neon Blue with transparency */
+  --input: rgba(75, 201, 255, 0.2); /* Icy Neon Blue subtle */
+  --input-background: #0C0F19; /* Code Slate */
+  --switch-background: #1a1f2e;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: rgba(0, 124, 240, 0.5); /* Aurora Blue */
+  
+  /* Chart Colors - Using the futuristic palette */
+  --chart-1: #007CF0; /* Aurora Blue */
+  --chart-2: #6DFFB8; /* Neural Mint */
+  --chart-3: #FF1B9B; /* Electric Pink */
+  --chart-4: #4BC9FF; /* Icy Neon Blue */
+  --chart-5: #FFB200; /* Quantum Amber */
+  
+  --radius: 0.625rem;
+  
+  /* Sidebar Colors */
+  --sidebar: #0C0F19; /* Code Slate */
+  --sidebar-foreground: #EAF6FF; /* Cloud White */
+  --sidebar-primary: #007CF0; /* Aurora Blue */
+  --sidebar-primary-foreground: #EAF6FF; /* Cloud White */
+  --sidebar-accent: #090979; /* Deep Indigo */
+  --sidebar-accent-foreground: #EAF6FF; /* Cloud White */
+  --sidebar-border: rgba(75, 201, 255, 0.2); /* Icy Neon Blue */
+  --sidebar-ring: rgba(0, 124, 240, 0.5); /* Aurora Blue */
+  
+  /* Aurora Background Colors - Updated for dark theme */
+  --white: #EAF6FF;
+  --black: #010102;
+  --transparent: transparent;
+  --blue-300: #4BC9FF; /* Icy Neon Blue */
+  --blue-400: #007CF0; /* Aurora Blue */
+  --blue-500: #007CF0; /* Aurora Blue */
+  --indigo-300: #090979; /* Deep Indigo */
+  --violet-200: #FF1B9B; /* Electric Pink */
+  
+  /* Success Color */
+  --success: #6DFFB8; /* Neural Mint */
+  --success-foreground: #010102; /* Space Black */
+}
+
+.dark {
+  --background: #010102; /* Space Black */
+  --foreground: #EAF6FF; /* Cloud White */
+  --card: #0C0F19; /* Code Slate */
+  --card-foreground: #EAF6FF; /* Cloud White */
+  --popover: #0C0F19; /* Code Slate */
+  --popover-foreground: #EAF6FF; /* Cloud White */
+  --primary: #007CF0; /* Aurora Blue */
+  --primary-foreground: #EAF6FF; /* Cloud White */
+  --secondary: #090979; /* Deep Indigo */
+  --secondary-foreground: #EAF6FF; /* Cloud White */
+  --muted: #0A0D16; /* Darker Code Slate */
+  --muted-foreground: #8B9BB8; /* Muted Cloud White */
+  --accent: #FF1B9B; /* Electric Pink */
+  --accent-foreground: #EAF6FF; /* Cloud White */
+  --destructive: #FFB200; /* Quantum Amber */
+  --destructive-foreground: #010102; /* Space Black */
+  --border: rgba(75, 201, 255, 0.3); /* Icy Neon Blue */
+  --input: rgba(75, 201, 255, 0.2); /* Icy Neon Blue subtle */
+  --ring: rgba(0, 124, 240, 0.5); /* Aurora Blue */
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  
+  /* Chart Colors */
+  --chart-1: #007CF0; /* Aurora Blue */
+  --chart-2: #6DFFB8; /* Neural Mint */
+  --chart-3: #FF1B9B; /* Electric Pink */
+  --chart-4: #4BC9FF; /* Icy Neon Blue */
+  --chart-5: #FFB200; /* Quantum Amber */
+  
+  /* Sidebar Colors */
+  --sidebar: #0C0F19; /* Code Slate */
+  --sidebar-foreground: #EAF6FF; /* Cloud White */
+  --sidebar-primary: #007CF0; /* Aurora Blue */
+  --sidebar-primary-foreground: #EAF6FF; /* Cloud White */
+  --sidebar-accent: #090979; /* Deep Indigo */
+  --sidebar-accent-foreground: #EAF6FF; /* Cloud White */
+  --sidebar-border: rgba(75, 201, 255, 0.2); /* Icy Neon Blue */
+  --sidebar-ring: rgba(0, 124, 240, 0.5); /* Aurora Blue */
+}
+
+/* Database Component Animations */
+.database {
+  offset-anchor: 10px 0px;
+  animation: database-animation-path;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+.db-light-1 {
+  offset-path: path("M 31 10 v 15 q 0 5 5 5 h 59 q 5 0 5 5 v 25");
+}
+
+.db-light-2 {
+  offset-path: path("M 77 10 v 10 q 0 5 5 5 h 13 q 5 0 5 5 v 25");
+}
+
+.db-light-3 {
+  offset-path: path("M 124 10 v 10 q 0 5 -5 5 h -14 q -5 0 -5 5 v 25");
+}
+
+.db-light-4 {
+  offset-path: path("M 170 10 v 15 q 0 5 -5 5 h -60 q -5 0 -5 5 v 25");
+}
+
+@keyframes database-animation-path {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+/* Custom animations for search component */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+/* Custom duration utilities for search component */
+.duration-2000 {
+  transition-duration: 2000ms;
+}
+
+.duration-4000 {
+  transition-duration: 4000ms;
+}
